@@ -1,0 +1,49 @@
+# Project: P3Lab5_SergioSuazo
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Habitante.o Aldeano.o Guerrero.o Jinete.o Caballero.o Arquero.o Civilizacion.o
+LINKOBJ  = main.o Habitante.o Aldeano.o Guerrero.o Jinete.o Caballero.o Arquero.o Civilizacion.o
+LIBS     = -L"D:/Program Files/Dev-Cpp/MinGW64/lib" -L"D:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Program Files/Dev-Cpp/MinGW64/include" -I"D:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Program Files/Dev-Cpp/MinGW64/include" -I"D:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = P3Lab5_SergioSuazo.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Habitante.o: Habitante.cpp
+	$(CPP) -c Habitante.cpp -o Habitante.o $(CXXFLAGS)
+
+Aldeano.o: Aldeano.cpp
+	$(CPP) -c Aldeano.cpp -o Aldeano.o $(CXXFLAGS)
+
+Guerrero.o: Guerrero.cpp
+	$(CPP) -c Guerrero.cpp -o Guerrero.o $(CXXFLAGS)
+
+Jinete.o: Jinete.cpp
+	$(CPP) -c Jinete.cpp -o Jinete.o $(CXXFLAGS)
+
+Caballero.o: Caballero.cpp
+	$(CPP) -c Caballero.cpp -o Caballero.o $(CXXFLAGS)
+
+Arquero.o: Arquero.cpp
+	$(CPP) -c Arquero.cpp -o Arquero.o $(CXXFLAGS)
+
+Civilizacion.o: Civilizacion.cpp
+	$(CPP) -c Civilizacion.cpp -o Civilizacion.o $(CXXFLAGS)
