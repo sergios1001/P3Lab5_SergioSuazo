@@ -4,7 +4,7 @@ Guerrero::Guerrero()
 {
 }
 
-void Guerrero::ataque()
+void Guerrero::ataque(Habitante* habitante)
 {
 }
 

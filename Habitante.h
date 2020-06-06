@@ -12,6 +12,8 @@ class Habitante
 		int getHora();
 		void setHora(int);
 		
+		virtual void nulo();
+		
 		~Habitante();
 	protected:
 		int vida;

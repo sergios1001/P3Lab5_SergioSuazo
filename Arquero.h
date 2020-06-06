@@ -11,7 +11,7 @@ class Arquero : public Guerrero
 		int getVida();
 		void setVida(int);
 		
-		void ataque();
+		void ataque(Habitante*);
 		
 		~Arquero();
 	protected:

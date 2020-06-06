@@ -16,8 +16,8 @@ void Jinete::setVida(int vida)
 	this->vida=vida;
 }
 
-void Jinete::ataque(){
-	
+void Jinete::ataque(Habitante* habitante){
+	habitante->setVida(habitante->getVida()-(poder+0.065*vida));
 }
 
 

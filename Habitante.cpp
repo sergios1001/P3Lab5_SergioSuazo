@@ -21,6 +21,9 @@ int Habitante::getHora(){
 	return hora;
 }
 
+void Habitante::nulo(){
+}
+
 void Habitante::setHora(int hora)
 {
 	this->hora=hora;

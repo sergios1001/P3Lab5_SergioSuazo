@@ -54,6 +54,7 @@ int Civilizacion::getCasas(){
 }
 void Civilizacion::setCasas(int casas){
 	this->casas=casas;
+	this->maxHabitantes=casas*5;
 }
 
 int Civilizacion::getCuarteles(){

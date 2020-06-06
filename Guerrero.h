@@ -8,7 +8,7 @@ class Guerrero : public Habitante
 	public:
 		Guerrero();
 		
-		virtual void ataque();
+		virtual void ataque(Habitante*)=0;
 		
 		~Guerrero();
 	protected:

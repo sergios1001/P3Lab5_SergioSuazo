@@ -11,7 +11,7 @@ class Jinete : public Guerrero
 		int getVida();
 		void setVida(int);
 		
-		void ataque();
+		void ataque(Habitante*);
 		
 		~Jinete();
 	protected:
