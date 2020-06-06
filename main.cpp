@@ -304,7 +304,7 @@ int main(int argc, char** argv) {
 								Guerrero *g = dynamic_cast<Guerrero*>(miCivilizacion->getHabitantes()[i]);
 								if(g!=0)
 								{
-									ejercito.push_back(miCivilizacion->getHabitantes()[i]);
+									ejercito.push_back(g);
 								}
 							}
 							
